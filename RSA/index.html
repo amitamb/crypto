@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/4.1.0/bignumber.js"></script>
+<script src="rsa.js"></script>
+<style>
+#key_info, #cipher_info, #message_info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 150px;
+  background: #ddd;
+}
+</style>
+</head>
+<body>
+  <button id="generate">Generate Keys(G)</button>
+  <div id="key_info">
+  </div>
+  <form id="encrypt">
+    <input id="msg" type="number" min="1" max="999999999" />
+    <button>Encrypt(E)</button>
+  </form>
+  <div id="cipher_info">
+  </div>
+  <button id="dencrypt">Decrypt(E)</button>
+  <div id="message_info">
+  </div>
+</body>
+</html>
